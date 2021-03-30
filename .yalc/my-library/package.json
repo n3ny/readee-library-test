@@ -1,0 +1,48 @@
+{
+  "name": "my-library",
+  "version": "1.0.0+3b40003d",
+  "description": "mi libreria de pruebas",
+  "author": "n3nyrbd",
+  "license": "MIT",
+  "repository": "n3nyrbd/my-library",
+  "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "source": "src/index.js",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build": "microbundle-crl --no-compress --format modern,cjs",
+    "start": "microbundle-crl watch --no-compress --format modern,cjs",
+    "test": "run-s test:unit test:lint test:build",
+    "test:build": "run-s build",
+    "test:lint": "eslint .",
+    "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
+    "test:watch": "react-scripts test --env=jsdom",
+    "predeploy": "cd example && npm install && npm run build",
+    "deploy": "gh-pages -d example/build",
+    "push": "yalc publish && yalc push",
+    "watch": "watch \"npm run push\" ./src"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "bootstrap": "^4.6.0",
+    "react-bootstrap": "^1.5.2",
+    "react-bootstrap-range-slider": "^2.0.2",
+    "react-full-screen": "^1.0.2",
+    "react-multi-carousel": "^2.6.2",
+    "react-pageflip": "^1.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "react-bootstrap": "^1.5.2",
+    "react-bootstrap-range-slider": "^2.0.2",
+    "react-full-screen": "^1.0.2",
+    "react-multi-carousel": "^2.6.2",
+    "react-pageflip": "^1.0.0"
+  },
+  "yalcSig": "3b40003d0416299e714f2239e3cac8ba"
+}
