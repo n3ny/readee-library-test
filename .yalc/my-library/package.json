@@ -1,6 +1,6 @@
 {
   "name": "my-library",
-  "version": "1.0.0+3b40003d",
+  "version": "1.0.0+50dd843e",
   "description": "mi libreria de pruebas",
   "author": "n3nyrbd",
   "license": "MIT",
@@ -44,5 +44,5 @@
     "react-multi-carousel": "^2.6.2",
     "react-pageflip": "^1.0.0"
   },
-  "yalcSig": "3b40003d0416299e714f2239e3cac8ba"
+  "yalcSig": "50dd843e5fc6d48d62371f479a12eb8e"
 }

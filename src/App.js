@@ -13,7 +13,7 @@ function App() {
       <ExampleComponent 
         pages={urls} 
         cover={urls[0]} 
-        size={{width:348, height:465}}  
+        size={{width:437, height:556}}  
       />
     </div>
   );
